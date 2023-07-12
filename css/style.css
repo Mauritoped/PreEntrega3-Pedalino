@@ -30,6 +30,9 @@ a {
   height: 65px;
   margin-right: 5px;
 }
+.navbar .social-icons {
+  display: flex;
+}
 .navbar .social-icons a {
   margin-right: 10px;
 }
@@ -57,12 +60,39 @@ a {
   justify-content: center;
 }
 .hero h2 {
-  color: aliceblue;
+  color: #ff4b2b;
   font-family: "IBM Plex Sans", sans-serif;
-  font-size: 36px;
+  font-size: 50px;
+  font-weight: bold;
   text-align: center;
 }
 
+.word-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+.word-animation .word {
+  opacity: 0;
+  animation: fade-in 1s forwards;
+  animation-delay: 0.5s;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .h1 {
   text-align: center;
 }
